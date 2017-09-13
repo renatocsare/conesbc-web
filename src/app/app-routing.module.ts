@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { MainComponent } from './main/main.component';
+import { AgendaComponent } from './agenda/agenda.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardProductComponent } from './dashboard-product/dashboard-product.component';
 import { ProductOverviewComponent } from './dashboard-product/overview/overview.component';
@@ -14,6 +15,10 @@ import { LoginComponent } from './login/login.component';
 import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
+    {
+        path: 'agenda',
+        component: AgendaComponent
+    },
     {
         path: 'login',
         component: LoginComponent
