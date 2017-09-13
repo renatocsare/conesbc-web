@@ -1,3 +1,17 @@
-<p>
-  agenda works!
-</p>
+<md-card *ngFor="let evento of eventos" class="example-card">
+  <img md-card-image src="{{evento.foto}}" alt="Imagem de capa do evento">
+  <md-card-header>
+    <div md-card-avatar class="example-header-image"></div>
+    <md-card-title>{{evento.titulo}}</md-card-title>
+    <md-card-subtitle>{{evento.dia}} de {{evento.mes}} de {{evento.ano}}</md-card-subtitle>
+  </md-card-header>
+  <md-card-content>
+    <p>
+      {{evento.descricao}}
+    </p>
+  </md-card-content>
+  <md-card-actions>
+    <button md-button>INSCREVA-SE</button>
+    <button md-button><i class="material-icons">share</i></button>
+  </md-card-actions>
+</md-card>
