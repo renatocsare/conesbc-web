@@ -1,3 +1,45 @@
-<p>
-  agenda works!
-</p>
+<div>
+  <md-card *ngFor="let evento of eventos" class="card-evento">
+    <img class="card-cover" md-card-image src="{{evento.foto}}" alt="Imagem de capa do evento">
+      <md-card-title>
+        <md-card-title>
+          <span class="md-headline">{{evento.titulo}}</span>
+        </md-card-title>
+        <md-card-subtitle>
+           <span class="md-subhead">{{evento.dia}} de {{evento.mes}} de {{evento.ano}}</span>
+        </md-card-subtitle>
+        <md-card-subtitle>
+           <span class="md-subhead"><md-icon class="icon">place</md-icon> {{evento.local}}</span>
+        </md-card-subtitle>
+      </md-card-title>
+      <md-card-actions layout="row" layout-align="end center">
+      </md-card-actions>
+    </md-card>
+
+
+  <!--<md-card *ngFor="let evento of eventos" class="card-evento">
+    <img class="card-cover" md-card-image src="{{evento.foto}}" alt="Imagem de capa do evento">
+    <md-card-header>
+      <div md-card-avatar class="example-header-image"></div>
+      <md-card-title><h2>{{evento.titulo}}</h2></md-card-title>
+      <md-card-subtitle><md-icon class="icon">event</md-icon> {{evento.dia}} de {{evento.mes}} de {{evento.ano}}</md-card-subtitle>
+      <md-card-subtitle><md-icon class="icon">place</md-icon> {{evento.local}}</md-card-subtitle>
+    </md-card-header>
+    
+    <md-card-content>
+      <p>
+        {{evento.descricao}}
+      </p>
+    </md-card-content>
+   
+    <md-card-actions>
+      <button md-button>INSCREVA-SE</button>
+      <div layout="row" layout-align="end center">
+        <button md-raised md-button><md-icon>share</md-icon></button>
+      </div>
+    </md-card-actions>
+  </md-card> -->
+
+</div>
+
+
