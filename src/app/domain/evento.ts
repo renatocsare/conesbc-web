@@ -7,10 +7,9 @@ export class Evento {
     public dia: string;
     public mes: string;
     public ano: string;
-
+    public local: string;
     /*
     public hora: string;
-    public local: string;
     public cidade: string;
     public bairro: string;
     public rua: string;
