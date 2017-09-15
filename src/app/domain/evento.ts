@@ -8,8 +8,10 @@ export class Evento {
     public mes: string;
     public ano: string;
     public local: string;
+    public horaInicio: string;
+    public horaFim: string;
     /*
-    public hora: string;
+ 
     public cidade: string;
     public bairro: string;
     public rua: string;

@@ -1,19 +1,28 @@
-<div>
-  <md-card *ngFor="let evento of eventos" class="card-evento">
-    <img class="card-cover" md-card-image src="{{evento.foto}}" alt="Imagem de capa do evento">
-      <md-card-title>
+<td-layout-nav>
+<div *ngFor="let evento of eventos" class="card-evento pad-sm">
+  <div class="dia pad-sm" layout="row" layout-align="center center">
+    <span>
+     - {{evento.dia}} de {{evento.mes}} -
+    </span>
+  </div>
+  <md-card>
+    <!--<img class="card-cover" md-card-image src="{{evento.foto}}" alt="Imagem de capa do evento">-->
+    <div class="header-bar" layout="row" layout-align="start center">
         <md-card-title>
           <span class="md-headline">{{evento.titulo}}</span>
         </md-card-title>
+    </div>
+      <div layout="row" layout-align="start center">
         <md-card-subtitle>
-           <span class="md-subhead">{{evento.dia}} de {{evento.mes}} de {{evento.ano}}</span>
+          <span class="md-subhead">{{evento.horaInicio}} em</span> 
+          <span class="md-subhead">{{evento.local}}</span>
         </md-card-subtitle>
-        <md-card-subtitle>
-           <span class="md-subhead"><md-icon class="icon">place</md-icon> {{evento.local}}</span>
-        </md-card-subtitle>
-      </md-card-title>
-      <md-card-actions layout="row" layout-align="end center">
-      </md-card-actions>
+      </div>
+      <div layout="row" layout-align="end center">
+        <button md-button>Inscreva-se</button>
+        <!--<button md-icon-button class="icon-button"><md-icon>share</md-icon></button>
+        <button md-icon-button class="icon-button"><md-icon>info</md-icon></button>-->
+      </div>
     </md-card>
 
 
@@ -41,5 +50,4 @@
   </md-card> -->
 
 </div>
-
-
+</td-layout-nav>

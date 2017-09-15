@@ -16,10 +16,6 @@ import { FormComponent } from './form/form.component';
 
 const routes: Routes = [
     {
-        path: 'agenda',
-        component: AgendaComponent
-    },
-    {
         path: 'login',
         component: LoginComponent
     },
@@ -28,9 +24,14 @@ const routes: Routes = [
         component: MainComponent,
         children: [
             {
+                path: 'agenda',
+                component: AgendaComponent,
+            },
+            {
                 component: DashboardComponent,
                 path: '',
             },
+            
             {
                 path: 'product',
                 component: DashboardProductComponent,
@@ -93,7 +94,7 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routedComponents: any[] = [
-    MainComponent, LoginComponent,
+    MainComponent, LoginComponent, AgendaComponent,
     DashboardComponent, DashboardProductComponent,
     FormComponent, LogsComponent, DetailComponent,
     FeaturesFormComponent, ProductFeaturesComponent, ProductOverviewComponent, ProductStatsComponent,

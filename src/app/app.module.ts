@@ -15,7 +15,7 @@ import { routedComponents, AppRoutingModule } from './app-routing.module';
 import { SharedModule } from './shared/shared.module';
 
 import { USER_PROVIDER, USERS_API } from './users';
-import { AgendaComponent } from './agenda/agenda.component';
+//import { AgendaComponent } from './agenda/agenda.component';
 
 const httpInterceptorProviders: Type<any>[] = [
   RequestInterceptor,
@@ -29,7 +29,7 @@ export function getAPI(): string {
   declarations: [
     AppComponent,
     routedComponents,
-    AgendaComponent,
+    //AgendaComponent,
   ], // directives, components, and pipes owned by this NgModule
   imports: [
     AppRoutingModule,
