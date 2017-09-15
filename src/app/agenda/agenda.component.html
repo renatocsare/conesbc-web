@@ -1,11 +1,16 @@
-<td-layout-nav>
-<div *ngFor="let evento of eventos" class="card-evento pad-sm">
+<td-layout-nav color="primary" id="nav">
+  <div id="top-bar" td-toolbar-content layout="row" layout-align="center center" flex>
+    <span>Agenda Digital</span>
+    <span flex></span>
+    <!--<a md-icon-button mdTooltip="Docs" href="https://teradata.github.io/covalent/" target="_blank"><md-icon>face</md-icon></a>-->
+  </div>
+<div *ngFor="let evento of eventos">
   <div class="dia pad-sm" layout="row" layout-align="center center">
     <span>
      - {{evento.dia}} de {{evento.mes}} -
     </span>
   </div>
-  <md-card>
+  <md-card  class="card-evento pad-sm">
     <!--<img class="card-cover" md-card-image src="{{evento.foto}}" alt="Imagem de capa do evento">-->
     <div class="header-bar" layout="row" layout-align="start center">
         <md-card-title>
@@ -19,7 +24,7 @@
         </md-card-subtitle>
       </div>
       <div layout="row" layout-align="end center">
-        <button md-button>Inscreva-se</button>
+        <button md-button color="primary">Inscreva-se</button>
         <!--<button md-icon-button class="icon-button"><md-icon>share</md-icon></button>
         <button md-icon-button class="icon-button"><md-icon>info</md-icon></button>-->
       </div>

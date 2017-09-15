@@ -7,14 +7,19 @@
   padding-top: 10px;
 }
 
+#top-bar {
+  box-shadow: none;
+  background: transparent;
+}
+
 .card-cover {
   background-size: cover;
 }
 
-.header-bar {
+//.header-bar {
   //height: 100px;
   //background-color: #3382cc;
-}
+//}
 
 .font-white {
   color: white;
@@ -29,6 +34,9 @@
 }
 
 .md-headline {
-  font-size: 26px;
+  font-size: 22px;
 }
 
+#nav {
+  background: #f2f2f2;
+}
